@@ -7,6 +7,11 @@ body{
     font-family: Nunito, 'Montserrat', sans-serif;
 }
 
+.white {
+	color: #ffffff;
+	font-size: 18px;
+}
+
 a{
 	text-decoration: none;
 }

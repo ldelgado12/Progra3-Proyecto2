@@ -1,0 +1,149 @@
+body{
+    font-family: Nunito;
+    background: #ffffff;
+}
+#section{
+    box-shadow: 0 4px 8px 0 #143646;
+    padding: 20px;
+    width: 780px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    height: 1200px;
+}
+
+.main{
+    height: 900px;
+}
+
+.wrapper {
+    margin-left: 20px;
+}
+
+#frm_registro_pf {
+    position: absolute;
+    top: 560px;
+}
+
+
+label{
+    display: block;
+    width: 140px;
+    text-align: left;
+    font-size: 18px;
+    white-space: nowrap;
+
+}
+
+.header{
+    font-size: 30px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2f3640;
+    text-align: center;
+
+}
+
+input, textarea, option, select{
+    padding: 6px 12px;
+    font-size: 18px;
+    display: block;
+    width: 320px;
+    border: #48dbfb solid 1px;
+    border-radius: 5px;
+}
+
+input{
+    height: 30px;
+}
+
+select{
+    width: 150px;;
+    height: 35px;
+    border: #48dbfb solid 1px;
+    border-radius: 5px;
+
+}
+main{
+    margin-bottom: 60px;
+}
+
+.btn_enviar{
+    position: absolute;
+    top: 630px;
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 780px;
+
+}
+
+
+#btn_registrar {
+    display: block;
+    margin-left: 37%;
+}
+
+button{
+    background-color: #f27232;
+    padding: 10px;
+    width: 170px;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 50px;
+    border-radius: 5px;
+    -webkit-box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);
+    -moz-box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);
+    box-shadow: 5px 5px 25px -8px rgba(0,0,0,0.75);
+
+}
+
+
+.lable {
+    font-size: 18px;
+
+}
+
+.main {
+    height: 800px;
+}
+
+.input {
+    width: 150px;;
+    height: 35px;
+    border: #6D6D6D solid 1px;
+    border-radius: 5px;
+}
+
+.white {
+    color: #ffffff;
+    font-size: 18px;
+}
+
+.grid {
+    float: left;
+    width: 400px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+}
+
+
+
+.subir {
+    margin-top: 40px;
+}
+
+.d1 {
+    font-size: 30px;
+    margin-top: 20px;
+    color: #2f3640;
+}
+
+.title_center {
+    text-align: center;
+}
+

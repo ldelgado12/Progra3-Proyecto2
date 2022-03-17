@@ -10,8 +10,9 @@ body{
     margin-top: 50px;
     margin-left: auto;
     margin-right: auto;
-    height: 1200px;
+    height: 1000px;
 }
+
 
 .main{
     height: 900px;
@@ -21,20 +22,24 @@ body{
     margin-left: 20px;
 }
 
+#columna_derecha{
+    box-shadow: 0 4px 8px 0 #143646;
+    padding: 20px;
+    width: 780px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
 #frm_registro_pf {
     position: absolute;
-    top: 560px;
+    top: 400px;
 }
 
-
-label{
-    display: block;
-    width: 140px;
-    text-align: left;
-    font-size: 18px;
-    white-space: nowrap;
-
+form section div{
+    margin-bottom: 15px;
 }
+
 
 .header{
     font-size: 30px;
@@ -47,6 +52,7 @@ label{
 
 }
 
+
 input, textarea, option, select{
     padding: 6px 12px;
     font-size: 18px;
@@ -56,9 +62,7 @@ input, textarea, option, select{
     border-radius: 5px;
 }
 
-input{
-    height: 30px;
-}
+
 
 select{
     width: 150px;;
@@ -102,69 +106,7 @@ button{
 }
 
 
-.lable {
-    font-size: 18px;
 
-}
-
-.main {
-    height: 800px;
-}
-
-.input {
-    width: 150px;;
-    height: 35px;
-    border: #6D6D6D solid 1px;
-    border-radius: 5px;
-}
-
-.white {
-    color: #ffffff;
-    font-size: 18px;
-}
-
-.grid {
-    float: left;
-    width: 400px;
-    display: grid;
-    grid-template-columns: auto auto;
-    grid-column-gap: 50px;
-}
-
-
-
-.subir {
-    margin-top: 40px;
-}
-
-.d1 {
-    font-size: 30px;
-    margin-top: 20px;
-    color: #2f3640;
-}
-.d2 {
-    font-size: 30px;
-    margin-top: 20px;
-    color: #2f3640;
-}
-
-.title_center {
-    text-align: center;
-}
-
-.mr-2 {
-    margin-right: 50px;
-}
-
-
-.ml-1 {
-    margin-left: 20px;
-}
-
-.middle2 {
-	margin-top: 50px;;
-	margin-bottom: auto;
-}
 
 .mr-1 {
     margin-right: 20px;
@@ -177,18 +119,61 @@ button{
     margin-left: 20px;
 }
 
-.ml-2 {
-    margin-left: 40px;
-}
-.mt-1 {
-    margin-top: 40px;
-}
 .mt-2 {
     margin-top: 20px;
 }
-.mt-4 {
-    margin-top: 10px;
+
+
+.position-fix{
+    position: fixed;
+    bottom: 0px;
 }
-.mb-1 {
-    margin-bottom: 40px;
+.form-control {
+    display: block;
+    width: 315px;
+    height: 30px;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    font-size: 18px;
 }
+
+.form-select {
+    display: block;
+    width: 345px;
+    height: 45px;
+    padding: 6px 12px;
+    margin-bottom: 15px;
+    font-size: 18px;
+    line-height: 1.42857143;
+
+
+}
+
+.grid {
+    float: left;
+    width: 400px;
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-column-gap: 50px;
+}
+
+
+
+.d1 {
+    font-size: 30px;
+    margin-top: 20px;
+    color: #2f3640;
+}
+
+.title_center {
+    text-align: center;
+}
+
+
+
+.middle2 {
+	margin-top: 50px;;
+	margin-bottom: auto;
+}
+
+

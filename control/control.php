@@ -5,17 +5,49 @@
     class control{
 
         private $smarty;
+        private $accion;
+
         function __construct(){
             $this->smarty = new config_smarty();
+            $this->accion = "";
         } 
 
         function menu(){
-                //SIEMPRE PRIMERO LOS ASSIGN ANTES QUE EL DISPLAY
-            
-            $nombre = "Luis";
-            $this->smarty ->setAssign("nombre",$nombre);
+            //SIEMPRE PRIMERO LOS ASSIGN ANTES QUE EL DISPLAY
 
-            $this->smarty ->setDisplay("login.tpl");
+            if(isset($_REQUEST['accion'])){
+                $this->accion = $_REQUEST['accion'];
+            }
+
+            switch($this->accion){
+                case "":
+                    $this->MostrarFRMLogin();
+                break;
+                case "login":
+                    $this->validarLogin();
+                break;
+                
+            }
+        }
+
+        function validarLogin(){
+
+            $usuario = $_REQUEST['usuario'];
+            $password = $_REQUEST['password'];
+
+
+        }
+
+
+        function MostrarFRMLogin(){
+            try{
+                $nombre = "Luis";
+                $this->smarty->setAssign("nombre", $nombre);
+                $this->smarty->setAssign("x", $nombre);
+                $this->smarty->setDisplay("login.tpl");  
+            }catch(Exception $e){
+                echo "error de variable smarty";
+            }
         }
 
 

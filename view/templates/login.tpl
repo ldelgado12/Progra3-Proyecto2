@@ -11,7 +11,7 @@
     <header class="main_header">
         <nav>
             <a href="index.html">
-            <img class="img_logo" src="/imagenes/Logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+            <img class="img_logo" src="imagenes/logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
             </a>
             <div class="float-right middle2">
                 <div class="float-right mr-2">
@@ -22,18 +22,21 @@
             </div>
         </nav>
     </header>
+
+    
     <div class="wrapper">
         <div class="section">
 
             <div class="cont">
                     <h1 class="center inicio color_text">Iniciar sesión</h1>
-                <form>
-                        <label class="label2 color_text" for="txt_correo">Correo electrónico</label>
-                        <input class="form-control border_input" type="email" id="txt_correo">
+                <form action="index.php" method="post">
+                        <input type="hidden" name="accion" value="login">
+                        <label class="label2 color_text" for="txt_correo">Usuario</label>
+                        <input class="form-control border_input" name="usuario" type="text" id="txt_correo">
                         <label class="label2 color_text" for="txt_contrasenna">Contraseña</label>
-                        <input class="form-control border_input" type="password" id="txt_contrasenna">
+                        <input class="form-control border_input" name="password" type="password" id="txt_contrasenna">
                         <div class="center">
-                        <button type="button" class="ingresar" id="btn_ingresar">Ingresar</button>
+                        <button  class="ingresar" id="btn_ingresar">Ingresar</button>
                         </div>
                         <p class="p color_text"><a href="#" class="p" id="cambiar_clave">¿Se le olvidó la contraseña?</a></p>
 
@@ -41,6 +44,8 @@
             </div>
         </div>
     </div>
+
+
 
 </body>
 </html>

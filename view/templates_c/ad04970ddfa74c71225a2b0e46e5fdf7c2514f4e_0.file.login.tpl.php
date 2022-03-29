@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-03-24 20:40:22
-  from 'C:\xampp\htdocs\proyecto2P3\view\templates\login.tpl' */
+/* Smarty version 4.1.0, created on 2022-03-27 18:02:52
+  from 'C:\xampp\htdocs\proyectoProgra\view\templates\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_623cc9263de9e3_06654731',
+  'unifunc' => 'content_62408aac2637e5_84022539',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'a5f57fb08bed0d6281307ae0dbb0c81840ce933c' => 
+    'ad04970ddfa74c71225a2b0e46e5fdf7c2514f4e' => 
     array (
-      0 => 'C:\\xampp\\htdocs\\proyecto2P3\\view\\templates\\login.tpl',
-      1 => 1648150819,
+      0 => 'C:\\xampp\\htdocs\\proyectoProgra\\view\\templates\\login.tpl',
+      1 => 1648396636,
       2 => 'file',
     ),
   ),
@@ -20,21 +20,26 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_623cc9263de9e3_06654731 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62408aac2637e5_84022539 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <title>Iniciar Sesión</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Costa Rica Educa - Registro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/iniciar_sesion.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+
 </head>
+
 <body>
     <header class="main_header">
         <nav>
             <a href="index.html">
-            <img class="img_logo" src="imagenes/logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+            <img class="img_logo" src="images/Logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
             </a>
             <div class="float-right middle2">
                 <div class="float-right mr-2">
@@ -45,8 +50,6 @@ function content_623cc9263de9e3_06654731 (Smarty_Internal_Template $_smarty_tpl)
             </div>
         </nav>
     </header>
-
-    
     <div class="wrapper">
         <div class="section">
 
@@ -71,5 +74,6 @@ function content_623cc9263de9e3_06654731 (Smarty_Internal_Template $_smarty_tpl)
 
 
 </body>
+
 </html><?php }
 }

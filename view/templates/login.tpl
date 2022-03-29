@@ -1,17 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
+
 <head>
     <meta charset="UTF-8">
-    <title>Iniciar Sesión</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Costa Rica Educa - Registro</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
     <link rel="stylesheet" href="css/general.css">
     <link rel="stylesheet" href="css/iniciar_sesion.css">
-    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+
+
 </head>
+
 <body>
     <header class="main_header">
         <nav>
             <a href="index.html">
-            <img class="img_logo" src="imagenes/logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
+            <img class="img_logo" src="images/Logo.png" width="61" height="80" alt="Logo Costa Rica Educa">
             </a>
             <div class="float-right middle2">
                 <div class="float-right mr-2">
@@ -22,8 +27,6 @@
             </div>
         </nav>
     </header>
-
-    
     <div class="wrapper">
         <div class="section">
 
@@ -48,4 +51,5 @@
 
 
 </body>
+
 </html>

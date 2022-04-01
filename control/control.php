@@ -44,12 +44,13 @@
                     foreach($rs as $dataColum){
                         // echo $dataColum . "\n";
                     }
-                    if($rs["role"]==1){
-                        $this->smarty->setAssign('role', "maestro");
-                    }else{
+                    if($rs["role"]==2){
                         $this->smarty->setAssign('role', "alumno");
+                    }else{
+                        $this->smarty->setAssign('role', "maestro");
                     }
                     $this->smarty->setAssign('usuario', $rs["usuario"]);
+                    $this->smarty->setAssign('id_usuario', $rs["id_usuario"]);
 
                     $this->smarty->setDisplay('grades.tpl');
                 }else{

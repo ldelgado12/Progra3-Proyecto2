@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-03-24 20:40:22
+/* Smarty version 4.1.0, created on 2022-03-25 22:34:39
   from 'C:\xampp\htdocs\proyecto2P3\view\templates\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_623cc9263de9e3_06654731',
+  'unifunc' => 'content_623e356f075bc4_67857189',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'a5f57fb08bed0d6281307ae0dbb0c81840ce933c' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyecto2P3\\view\\templates\\login.tpl',
-      1 => 1648150819,
+      1 => 1648244075,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_623cc9263de9e3_06654731 (Smarty_Internal_Template $_smarty_tpl) {
+function content_623e356f075bc4_67857189 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -55,9 +55,9 @@ function content_623cc9263de9e3_06654731 (Smarty_Internal_Template $_smarty_tpl)
                 <form action="index.php" method="post">
                         <input type="hidden" name="accion" value="login">
                         <label class="label2 color_text" for="txt_correo">Usuario</label>
-                        <input class="form-control border_input" name="usuario" type="text" id="txt_correo">
+                        <input class="form-control border_input" name="usuario" type="text" id="txt_correo" placeholder="usuario">
                         <label class="label2 color_text" for="txt_contrasenna">Contraseña</label>
-                        <input class="form-control border_input" name="password" type="password" id="txt_contrasenna">
+                        <input class="form-control border_input" name="password" type="password" id="txt_contrasenna" placeholder="password">
                         <div class="center">
                         <button  class="ingresar" id="btn_ingresar">Ingresar</button>
                         </div>

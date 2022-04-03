@@ -1,4 +1,27 @@
-<!DOCTYPE html>
+<?php
+/* Smarty version 4.1.0, created on 2022-04-03 22:39:48
+  from 'C:\xampp\htdocs\proyectoFinalP3\view\templates\login.tpl' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '4.1.0',
+  'unifunc' => 'content_624a06143c4c52_99314842',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'f6768593897954c13f3a0013f456620eff153d74' => 
+    array (
+      0 => 'C:\\xampp\\htdocs\\proyectoFinalP3\\view\\templates\\login.tpl',
+      1 => 1649018381,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_624a06143c4c52_99314842 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -58,4 +81,5 @@
 
 
 </body>
-</html>
+</html><?php }
+}

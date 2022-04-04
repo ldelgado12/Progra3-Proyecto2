@@ -4,9 +4,6 @@ function desplegarNotas(){
         "method": "POST",
         "timeout": 0,
       };
-
-      
-      
       $.ajax(settings).done(function (response) {
 
         console.log(response)
@@ -48,6 +45,23 @@ function borrarUsuario(id_usario){
     });
   
   }
+
+
+function editarNota(id_usuario){
+    
+    var settings = {
+        "url": "http://localhost/proyectoProgra/index.php?accion=abrirFormActualizarNotas&id_usuario="+id_usuario,
+        "method": "POST",
+        "timeout": 0,
+        };
+        
+        
+        
+        $.ajax(settings).done(function (response) {
+        $( "body" ).html("");
+        $( "body" ).html(response);
+        });      
+}
 
 window.onload = function() {
     // desplegarNotas()

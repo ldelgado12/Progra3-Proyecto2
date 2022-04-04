@@ -45,8 +45,8 @@
                     $cuerpoTabla .= "<td>".$fila['ingles']."</td>";
                     $cuerpoTabla .= "<td>";
                     $cuerpoTabla .= "<a class='add' title='Add' data-toggle='tooltip'><i class='material-icons'>&#xE03B;</i></a>";
-                    $cuerpoTabla .= "<a class='edit' title='Edit' data-toggle='tooltip'><i class='material-icons'>&#xE254;</i></a>";
-                    $cuerpoTabla .= "<a class='delete' title='Delete' data-toggle='tooltip' onclick='borrarUsuario(".$fila['id_usuario'].")'><i class='material-icons'>&#xE872;</i></a>";
+                    $cuerpoTabla .= "<a class='edit' href='index.php?accion=abrirFormActualizarNotas&id_usuario=".$fila['id_usuario']."' title='Edit' data-toggle='tooltip' onclick='editarNota(".$fila['id_usuario'].");'><i class='material-icons'>&#xE254;</i></a>";
+                    $cuerpoTabla .= "<a class='delete' title='Delete' data-toggle='tooltip' onclick='borrarUsuario(".$fila['id_usuario'].");'><i class='material-icons'>&#xE872;</i></a>";
                     $cuerpoTabla .= "</td>";
                 $cuerpoTabla .=  "</tr>";
             }

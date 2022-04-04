@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-04-01 08:20:31
+/* Smarty version 4.1.0, created on 2022-04-03 05:51:38
   from 'C:\xampp\htdocs\proyectoProgra\view\templates\grades.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_624699af98b9c0_47386426',
+  'unifunc' => 'content_624919cac0d177_53363647',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f2d0287257ff90abac2d7b5178210a5f0644a098' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyectoProgra\\view\\templates\\grades.tpl',
-      1 => 1648794016,
+      1 => 1648957895,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_624699af98b9c0_47386426 (Smarty_Internal_Template $_smarty_tpl) {
+function content_624919cac0d177_53363647 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -169,13 +169,13 @@ $(document).ready(function(){
 		}		
     });
 	// Edit row on edit button click
-	$(document).on("click", ".edit", function(){		
-        $(this).parents("tr").find("td:not(:last-child)").each(function(){
-			$(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
-		});		
-		$(this).parents("tr").find(".add, .edit").toggle();
-		$(".add-new").attr("disabled", "disabled");
-    });
+	// $(document).on("click", ".edit", function(){		
+    //     $(this).parents("tr").find("td:not(:last-child)").each(function(){
+	// 		$(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
+	// 	});		
+	// 	$(this).parents("tr").find(".add, .edit").toggle();
+	// 	$(".add-new").attr("disabled", "disabled");
+    // });
 	// Delete row on delete button click
 	$(document).on("click", ".delete", function(){
         $(this).parents("tr").remove();
@@ -239,9 +239,6 @@ if ($_prefixVariable3 == "alumno") {?>
                   <?php } else { ?>
                   <div class="col-sm-8"><h2>Manage <b>Grades</b></h2></div>
                   <?php }?>
-                  <div class="col-sm-4">
-                      <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
-                  </div>
               </div>
           </div>
             <table class="table table-bordered grades">

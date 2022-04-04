@@ -137,13 +137,13 @@ $(document).ready(function(){
 		}		
     });
 	// Edit row on edit button click
-	$(document).on("click", ".edit", function(){		
-        $(this).parents("tr").find("td:not(:last-child)").each(function(){
-			$(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
-		});		
-		$(this).parents("tr").find(".add, .edit").toggle();
-		$(".add-new").attr("disabled", "disabled");
-    });
+	// $(document).on("click", ".edit", function(){		
+    //     $(this).parents("tr").find("td:not(:last-child)").each(function(){
+	// 		$(this).html('<input type="text" class="form-control" value="' + $(this).text() + '">');
+	// 	});		
+	// 	$(this).parents("tr").find(".add, .edit").toggle();
+	// 	$(".add-new").attr("disabled", "disabled");
+    // });
 	// Delete row on delete button click
 	$(document).on("click", ".delete", function(){
         $(this).parents("tr").remove();
@@ -195,9 +195,6 @@ $(document).ready(function(){
                   {else}
                   <div class="col-sm-8"><h2>Manage <b>Grades</b></h2></div>
                   {/if}
-                  <div class="col-sm-4">
-                      <button type="button" class="btn btn-info add-new"><i class="fa fa-plus"></i> Add New</button>
-                  </div>
               </div>
           </div>
             <table class="table table-bordered grades">

@@ -21,8 +21,7 @@
             <div class="float-right middle2">
                 <div class="float-right mr-2">
                     <p class="white">¿No eres miembro?</p>
-                    <a href="registro_centroEdu.html" class="registrar_cuenta ml-1">Registro Centro Educativo</a>
-                    <a href="registro_padre.html" class="registrar_cuenta ml-1">Registro Familiar</a>
+                    <a class="registrar_cuenta ml-1" href="index.php?accion=mostrarFormRegistro">Registrar el usuario</a>
                 </div>
             </div>
         </nav>

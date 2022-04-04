@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-03-27 18:02:52
+/* Smarty version 4.1.0, created on 2022-04-03 02:06:34
   from 'C:\xampp\htdocs\proyectoProgra\view\templates\login.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_62408aac2637e5_84022539',
+  'unifunc' => 'content_6248e50a29f262_77815069',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'ad04970ddfa74c71225a2b0e46e5fdf7c2514f4e' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyectoProgra\\view\\templates\\login.tpl',
-      1 => 1648396636,
+      1 => 1648944392,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_62408aac2637e5_84022539 (Smarty_Internal_Template $_smarty_tpl) {
+function content_6248e50a29f262_77815069 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html>
 
@@ -44,8 +44,7 @@ function content_62408aac2637e5_84022539 (Smarty_Internal_Template $_smarty_tpl)
             <div class="float-right middle2">
                 <div class="float-right mr-2">
                     <p class="white">¿No eres miembro?</p>
-                    <a href="registro_centroEdu.html" class="registrar_cuenta ml-1">Registro Centro Educativo</a>
-                    <a href="registro_padre.html" class="registrar_cuenta ml-1">Registro Familiar</a>
+                    <a class="registrar_cuenta ml-1" href="index.php?accion=mostrarFormRegistro">Registrar el usuario</a>
                 </div>
             </div>
         </nav>

@@ -1,5 +1,7 @@
 <?php
 
+    session_start();
+    
     require_once 'libs/smarty_4_1_0/config_smarty.php';
     require_once 'model/model.php';
     class control{
@@ -44,6 +46,7 @@
             }
         }
         function validarLogin(){
+
             $usuario = $_REQUEST['usuario'];
             $password = $_REQUEST['password'];
             $rs = $this->ins_model->m_validarLogin($usuario, $password);
@@ -52,18 +55,23 @@
             if(sizeof($rs)>0){
                 if($rs["id_usuario"] > 0){
 
-                    
+                    $_SESSION['USUARIO'] = $usuario;
+                    $_SESSION['NOMBRE'] = $rs["nombre"];
                     foreach($rs as $dataColum){
                         // echo $dataColum . "\n";
                     }
                     if($rs["role"]==2){
                         $this->smarty->setAssign('role', "alumno");
+                        $_SESSION['ROLE'] = "alumno";
                     }else{
                         $this->smarty->setAssign('role', "maestro");
+                        $_SESSION['ROLE'] = "maestro";
                     }
-                    $this->smarty->setAssign('usuario', $rs["usuario"]);
+                    $this->smarty->setAssign('usuario', $_SESSION['USUARIO']);
                     $this->smarty->setAssign('id_usuario', $rs["id_usuario"]);
-
+                    
+                    
+                    
                     $this->smarty->setDisplay('grades.tpl');
                 }else{
                     echo "<h2>Usuario o Contrasenia incorrecto. Por favor verifique o registrese para continuar.</h2>";
@@ -79,7 +87,13 @@
             
         }
         function mostrarFrmLogin(){
-            $this->smarty->setDisplay('login.tpl');
+            if(isset($_SESSION['USUARIO'])){
+                $this->smarty->setAssign('usuario', $_SESSION['USUARIO']);
+                $this->smarty->setDisplay('grades.tpl');
+            }else{
+                $this->smarty->setDisplay('login.tpl');
+            }
+            
         }
         function mostrarRegistroEstudiante(){
             $this->smarty->setDisplay('signUpTeacher.tpl');
@@ -143,6 +157,8 @@
             $this->smarty->setAssign("ciencias",$rs['ciencias']);
             $this->smarty->setAssign("estudios_sociales",$rs['estudios_sociales']);
             $this->smarty->setAssign("ingles",$rs['ingles']);
+            $this->smarty->setAssign("pass",$rs['pass']);
+            $this->smarty->setAssign("currentUser",$_SESSION['USUARIO']);
             $this->smarty->setDisplay('updateStudent.tpl');
         }
         function actualizarNotas(){
@@ -181,7 +197,11 @@
                 echo("Notas no actualizadas");
             }
 
-
+            if(isset($_SESSION['USUARIO'])){
+                $this->smarty->setAssign('usuario', $_SESSION['USUARIO']);
+                $this->smarty->setDisplay('grades.tpl');
+            }
+            
         }
     }
 ?>

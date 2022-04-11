@@ -156,7 +156,7 @@ $(document).ready(function(){
 <div class="container-lg">
     <div>
         <p>Usuario: <em>{$usuario}</em></p>
-        <button type="button" class="btn btn-warning">Cerrar Sesión</button>
+        <button type="button" class="btn btn-warning"><a href="control/logout.php">Cerrar Sesión</a> </button>
     </div>
     <div class="table-responsive">
         <div class="table-wrapper">

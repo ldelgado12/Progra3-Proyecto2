@@ -120,7 +120,7 @@
             $this->conn = $this->inst_conn->AbrirBD();
             $arr_rs = array();
             $id_usuario = $_REQUEST['id_usuario'];
-            $sql = "SELECT u.id_usuario,usuario,nombre,apell1,apell2,matematica,espaniol,ciencias,estudios_sociales,ingles, role FROM usuarios u INNER JOIN notas n ON u.id_usuario = n.id_usuario WHERE u.id_usuario =".$id_usuario;
+            $sql = "SELECT u.id_usuario,pass,usuario,nombre,apell1,apell2,matematica,espaniol,ciencias,estudios_sociales,ingles, role FROM usuarios u INNER JOIN notas n ON u.id_usuario = n.id_usuario WHERE u.id_usuario =".$id_usuario;
             $rs = $this->conn->query($sql);
             while($fila = $rs->fetch_assoc()){
                 $arr_rs["id_usuario"] =  $fila['id_usuario'];
@@ -133,6 +133,7 @@
                 $arr_rs["ciencias"] =  $fila['ciencias'];
                 $arr_rs["estudios_sociales"] =  $fila['estudios_sociales'];
                 $arr_rs["ingles"] =  $fila['ingles'];
+                $arr_rs["pass"] =  $fila['pass'];
             }
             $this->conn = $this->inst_conn->CerrarBD();
             return $arr_rs;

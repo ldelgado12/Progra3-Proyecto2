@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-04-03 08:53:14
+/* Smarty version 4.1.0, created on 2022-04-11 21:51:52
   from 'C:\xampp\htdocs\proyectoProgra\view\templates\updateStudent.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_6249445adf04f7_96251129',
+  'unifunc' => 'content_625486d8760634_09538899',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '77dae75443265694da71c8c9554420c7b2983cd7' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyectoProgra\\view\\templates\\updateStudent.tpl',
-      1 => 1648968792,
+      1 => 1649706700,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_6249445adf04f7_96251129 (Smarty_Internal_Template $_smarty_tpl) {
+function content_625486d8760634_09538899 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -37,6 +37,22 @@ function content_6249445adf04f7_96251129 (Smarty_Internal_Template $_smarty_tpl)
       <label>
         <p class="label-txt">ID de estudiante</p>
         <input type="text" class="input" name="id_usuario" value="<?php echo $_smarty_tpl->tpl_vars['id_usuario']->value;?>
+">
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+      </label>
+      <label>
+        <p class="label-txt">Contraseña de estudiante</p>
+        <input type="text" class="input" name="pass" value="<?php echo $_smarty_tpl->tpl_vars['pass']->value;?>
+">
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+      </label>
+      <label>
+        <p class="label-txt">Current User</p>
+        <input type="text" class="input" name="currentUser" value="<?php echo $_smarty_tpl->tpl_vars['currentUser']->value;?>
 ">
         <div class="line-box">
           <div class="line"></div>

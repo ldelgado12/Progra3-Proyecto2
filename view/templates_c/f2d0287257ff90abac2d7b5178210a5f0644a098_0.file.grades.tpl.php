@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 4.1.0, created on 2022-04-03 05:51:38
+/* Smarty version 4.1.0, created on 2022-04-11 22:17:57
   from 'C:\xampp\htdocs\proyectoProgra\view\templates\grades.tpl' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '4.1.0',
-  'unifunc' => 'content_624919cac0d177_53363647',
+  'unifunc' => 'content_62548cf510d2d7_22903212',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'f2d0287257ff90abac2d7b5178210a5f0644a098' => 
     array (
       0 => 'C:\\xampp\\htdocs\\proyectoProgra\\view\\templates\\grades.tpl',
-      1 => 1648957895,
+      1 => 1649708273,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_624919cac0d177_53363647 (Smarty_Internal_Template $_smarty_tpl) {
+function content_62548cf510d2d7_22903212 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="en">
 <head>
@@ -190,7 +190,7 @@ $(document).ready(function(){
     <div>
         <p>Usuario: <em><?php echo $_smarty_tpl->tpl_vars['usuario']->value;?>
 </em></p>
-        <button type="button" class="btn btn-warning">Cerrar Sesión</button>
+        <button type="button" class="btn btn-warning"><a href="control/logout.php">Cerrar Sesión</a> </button>
     </div>
     <div class="table-responsive">
         <div class="table-wrapper">

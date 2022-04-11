@@ -18,6 +18,20 @@
           <div class="line"></div>
         </div>
       </label>
+      <label>
+        <p class="label-txt">Contraseña de estudiante</p>
+        <input type="text" class="input" name="pass" value="{$pass}">
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+      </label>
+      <label>
+        <p class="label-txt">Current User</p>
+        <input type="text" class="input" name="currentUser" value="{$currentUser}">
+        <div class="line-box">
+          <div class="line"></div>
+        </div>
+      </label>
         <label>
           <p class="label-txt">Edite nombre de usuario</p>
           <input type="text" class="input" name="usuario" value="{$usuario}" required>
